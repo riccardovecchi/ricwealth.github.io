@@ -488,21 +488,7 @@ select option { background: var(--bg3); }
     <div class="sc"><div class="sc-lbl">Previdenza</div><div class="stat-val p num" id="d-p">€ 0</div><div class="stat-delta" id="d-dp"></div></div>
   </div>
 
-  <!-- CHART ANDAMENTO -->
-  <div class="chart-sec">
-    <div class="ch-head">
-      <div class="ch-title">Andamento</div>
-      <div class="ch-tabs">
-        <button class="cht active" onclick="setMode('all',this)">Tutto</button>
-        <button class="cht" onclick="setMode('1y',this)">1A</button>
-        <button class="cht" onclick="setMode('6m',this)">6M</button>
-        <button class="cht" onclick="setMode('3m',this)">3M</button>
-      </div>
-    </div>
-    <div class="ch-wrap"><canvas id="mainChart"></canvas></div>
-  </div>
-
-  <!-- 2-COL: distribuzione + investimenti per tipo -->
+   <!-- 2-COL: distribuzione + investimenti per tipo -->
   <div class="dash-grid">
     <div class="sec">
       <div class="sec-h"><span class="sec-title">Distribuzione patrimonio</span></div>
@@ -522,6 +508,20 @@ select option { background: var(--bg3); }
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- CHART ANDAMENTO -->
+  <div class="chart-sec">
+    <div class="ch-head">
+      <div class="ch-title">Andamento</div>
+      <div class="ch-tabs">
+        <button class="cht active" onclick="setMode('all',this)">Tutto</button>
+        <button class="cht" onclick="setMode('1y',this)">1A</button>
+        <button class="cht" onclick="setMode('6m',this)">6M</button>
+        <button class="cht" onclick="setMode('3m',this)">3M</button>
+      </div>
+    </div>
+    <div class="ch-wrap"><canvas id="mainChart"></canvas></div>
   </div>
 
   <!-- OBIETTIVI MINI -->
